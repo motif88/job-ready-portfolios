@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Manrope:wght@600;700&display=swap");
+
+:root {
+  /* Core brand colors */
+  --color-ink: #0b1220;
+  --color-navy: #132033;
+  --color-canvas: #f6f8fb;
+  --color-surface: #ffffff;
+  --color-text: #172033;
+  --color-text-muted: #5d6878;
+  --color-border: #dde3ea;
+  --color-primary: #155eef;
+  --color-primary-hover: #004eeb;
+  --color-accent: #56d4ff;
+  --color-success: #087a5b;
+  --color-warning: #b54708;
+  --color-focus: #84caff;
+
+  /* Semantic colors */
+  --color-background-page: var(--color-canvas);
+  --color-background-page-alt: var(--color-surface);
+  --color-surface-elevated: var(--color-surface);
+  --color-surface-dark: var(--color-ink);
+  --color-surface-dark-elevated: var(--color-navy);
+  --color-text-primary: var(--color-text);
+  --color-text-secondary: var(--color-text-muted);
+  --color-text-inverse: var(--color-surface);
+  --color-text-inverse-muted: #cbd5e1;
+  --color-border-default: var(--color-border);
+  --color-border-strong: #718096;
+  --color-border-dark: rgba(255, 255, 255, 0.16);
+  --color-interactive: var(--color-primary);
+  --color-interactive-hover: var(--color-primary-hover);
+  --color-interactive-active: var(--color-primary-hover);
+  --color-interactive-disabled: #94a3b8;
+  --color-focus-ring: var(--color-primary);
+  --color-status-success: var(--color-success);
+  --color-status-warning: var(--color-warning);
+  --color-status-accent: var(--color-accent);
+  --color-glow-primary: rgba(21, 94, 239, 0.16);
+  --color-glow-accent: rgba(86, 212, 255, 0.12);
+
+  /* Spacing: 4px half-step on an 8px base rhythm */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-30: 7.5rem;
+
+  /* Radii */
+  --radius-small: 0.5rem;
+  --radius-medium: 0.75rem;
+  --radius-standard: 1rem;
+  --radius-large: 1.25rem;
+  --radius-hero: 1.5rem;
+  --radius-pill: 999px;
+
+  /* Compatibility aliases for existing styles */
+  --radius-sm: var(--radius-medium);
+  --radius-md: var(--radius-standard);
+  --radius-lg: var(--radius-hero);
+
+  /* Elevation */
+  --shadow-none: none;
+  --shadow-subtle: 0 4px 12px rgba(19, 32, 51, 0.05);
+  --shadow-card: 0 12px 22px rgba(19, 32, 51, 0.06);
+  --shadow-elevated: 0 16px 36px rgba(19, 32, 51, 0.08);
+  --shadow-dark-elevated: 0 20px 48px rgba(0, 0, 0, 0.22);
+  --shadow-glow-primary: 0 0 48px var(--color-glow-primary);
+  --shadow-glow-accent: 0 0 32px var(--color-glow-accent);
+  --shadow-soft: var(--shadow-elevated);
+
+  /* Motion */
+  --transition-duration-fast: 120ms;
+  --transition-duration-standard: 180ms;
+  --transition-duration-slow: 250ms;
+  --transition-easing-standard: ease;
+  --transition-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --transition-standard: var(--transition-duration-standard) var(--transition-easing-standard);
+
+  /* Typography families; scale is established separately */
+  --font-heading: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+  --font-body: "Instrument Sans", "Avenir Next", "Segoe UI", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-display: clamp(2.5rem, 2.1rem + 2vw, 3.5rem);
+  --font-size-h1: clamp(2rem, 1.7rem + 1.5vw, 3rem);
+  --font-size-h2: clamp(1.625rem, 1.475rem + 0.75vw, 2.125rem);
+  --font-size-h3: clamp(1.25rem, 1.175rem + 0.375vw, 1.5rem);
+  --font-size-h4: clamp(1.0625rem, 1.025rem + 0.1875vw, 1.125rem);
+  --font-size-body-large: clamp(1.125rem, 1.085rem + 0.2vw, 1.25rem);
+  --font-size-body: 1rem;
+  --font-size-body-small: 0.875rem;
+  --font-size-label: 0.875rem;
+  --font-size-eyebrow: 0.75rem;
+
+  --line-height-display: 1.05;
+  --line-height-h1: 1.1;
+  --line-height-h2: 1.15;
+  --line-height-h3: 1.25;
+  --line-height-h4: 1.3;
+  --line-height-body-large: 1.6;
+  --line-height-body: 1.65;
+  --line-height-body-small: 1.55;
+  --line-height-label: 1.4;
+  --line-height-eyebrow: 1.4;
+
+  --letter-spacing-display: -0.03em;
+  --letter-spacing-h1: -0.025em;
+  --letter-spacing-h2: -0.02em;
+  --letter-spacing-h3: -0.01em;
+  --letter-spacing-eyebrow: 0.1em;
+  --text-measure: 45rem;
+
+  /* Containers */
+  --container-max-width: 75rem;
+  --container-reading-width: 45rem;
+  --container-padding-mobile: 1.25rem;
+  --container-padding-tablet: 2rem;
+  --container-padding-desktop: 3rem;
+  --container-padding: var(--container-padding-mobile);
+
+  /* Compatibility aliases for existing styles */
+  --container-width: var(--container-max-width);
+  --content-width: var(--container-reading-width);
+  --max-width: var(--container-max-width);
+  --grid-gap: var(--space-6);
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --container-padding: var(--container-padding-tablet);
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --container-padding: var(--container-padding-desktop);
+  }
+}

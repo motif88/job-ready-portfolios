@@ -1,0 +1,28 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="500" height="360" viewBox="0 0 500 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Website / CMS Preview">
+<g clip-path="url(#clip0_0_18)">
+<rect width="500" height="360" rx="24" fill="#132033"/>
+<rect id="Browser Bar" width="500" height="48" fill="#0B1220"/>
+<circle id="Ellipse" opacity="0.32" cx="22" cy="24" r="4" fill="white"/>
+<circle id="Ellipse_2" opacity="0.32" cx="38" cy="24" r="4" fill="white"/>
+<circle id="Ellipse_3" cx="54" cy="24" r="4" fill="#56D4FF"/>
+<rect id="CMS Sidebar" opacity="0.78" y="48" width="118" height="312" fill="#0B1220"/>
+<rect id="Rectangle" opacity="0.22" x="22" y="82" width="72" height="8" rx="4" fill="white"/>
+<rect id="Rectangle_2" opacity="0.72" x="22" y="116" width="60" height="8" rx="4" fill="white"/>
+<rect id="Rectangle_3" opacity="0.22" x="22" y="150" width="72" height="8" rx="4" fill="white"/>
+<rect id="Rectangle_4" opacity="0.22" x="22" y="184" width="60" height="8" rx="4" fill="white"/>
+<rect id="Rectangle_5" opacity="0.22" x="22" y="218" width="72" height="8" rx="4" fill="white"/>
+<rect id="Website Preview" x="140" y="78" width="338" height="252" rx="12" fill="white"/>
+<rect id="Rectangle_6" opacity="0.14" x="166" y="106" width="284" height="78" rx="12" fill="#155EEF"/>
+<rect id="Rectangle_7" opacity="0.58" x="166" y="208" width="220" height="10" rx="5" fill="#172033"/>
+<rect id="Rectangle_8" opacity="0.24" x="166" y="236" width="186" height="10" rx="5" fill="#172033"/>
+<rect id="Rectangle_9" opacity="0.24" x="166" y="264" width="152" height="10" rx="5" fill="#172033"/>
+</g>
+<rect x="0.5" y="0.5" width="499" height="359" rx="23.5" stroke="#155EEF"/>
+</g>
+<defs>
+<clipPath id="clip0_0_18">
+<rect width="500" height="360" rx="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

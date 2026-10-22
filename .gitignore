@@ -1,0 +1,20 @@
+# macOS and Windows metadata
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Editor settings
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*~

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Design System Test Page | Stanley Johnson</title>
+    <meta name="description" content="Internal development page for validating the portfolio design system." />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body class="design-system-page">
+    <a class="skip-link" href="#main-content">Skip to design-system content</a>
+
+    <header class="ds-header">
+      <div class="container ds-header__inner">
+        <div>
+          <p class="eyebrow">Internal development page</p>
+          <p class="ds-header__title">Portfolio Design System</p>
+        </div>
+        <nav class="ds-nav" aria-label="Design-system sections">
+          <a href="#foundations">Foundations</a>
+          <a href="#components">Components</a>
+          <a href="#dark-surfaces">Dark surfaces</a>
+          <a href="#focus">Focus</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section ds-intro" aria-labelledby="ds-title">
+        <div class="reading-container">
+          <p class="eyebrow">Design System V1 · Test fixture</p>
+          <h1 id="ds-title">A responsive inventory for visual validation.</h1>
+          <p class="text-body-large">This page contains development-only sample labels. It tests foundations and components without representing final portfolio content.</p>
+          <p class="ds-notice"><strong>Keyboard check:</strong> Use Tab and Shift+Tab throughout this page to inspect focus visibility and order.</p>
+        </div>
+      </section>
+
+      <section class="section ds-section" id="foundations" aria-labelledby="foundations-title">
+        <div class="container stack">
+          <header class="section-heading">
+            <p class="eyebrow">Foundations</p>
+            <h2 id="foundations-title">Color, type, and spacing</h2>
+            <p class="section-heading__description">Core visual decisions exposed as reusable tokens.</p>
+          </header>
+
+          <section class="stack" aria-labelledby="brand-colors-title">
+            <h3 id="brand-colors-title">Brand colors</h3>
+            <ul class="ds-swatches">
+              <li class="ds-swatch" style="--swatch: var(--color-ink)"><span class="ds-swatch__sample"></span><code>--color-ink</code><small>#0b1220</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-navy)"><span class="ds-swatch__sample"></span><code>--color-navy</code><small>#132033</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-canvas)"><span class="ds-swatch__sample"></span><code>--color-canvas</code><small>#f6f8fb</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-surface)"><span class="ds-swatch__sample"></span><code>--color-surface</code><small>#ffffff</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-text)"><span class="ds-swatch__sample"></span><code>--color-text</code><small>#172033</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-text-muted)"><span class="ds-swatch__sample"></span><code>--color-text-muted</code><small>#5d6878</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-border)"><span class="ds-swatch__sample"></span><code>--color-border</code><small>#dde3ea</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-primary)"><span class="ds-swatch__sample"></span><code>--color-primary</code><small>#155eef</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-primary-hover)"><span class="ds-swatch__sample"></span><code>--color-primary-hover</code><small>#004eeb</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-accent)"><span class="ds-swatch__sample"></span><code>--color-accent</code><small>#56d4ff</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-success)"><span class="ds-swatch__sample"></span><code>--color-success</code><small>#087a5b</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-warning)"><span class="ds-swatch__sample"></span><code>--color-warning</code><small>#b54708</small></li>
+              <li class="ds-swatch" style="--swatch: var(--color-focus)"><span class="ds-swatch__sample"></span><code>--color-focus</code><small>#84caff</small></li>
+            </ul>
+          </section>
+
+          <section class="stack" aria-labelledby="semantic-colors-title">
+            <h3 id="semantic-colors-title">Semantic colors</h3>
+            <ul class="ds-swatches">
+              <li class="ds-swatch" style="--swatch: var(--color-background-page)"><span class="ds-swatch__sample"></span><code>Page background</code></li>
+              <li class="ds-swatch" style="--swatch: var(--color-surface-elevated)"><span class="ds-swatch__sample"></span><code>Elevated surface</code></li>
+              <li class="ds-swatch" style="--swatch: var(--color-surface-dark)"><span class="ds-swatch__sample"></span><code>Dark surface</code></li>
+              <li class="ds-swatch" style="--swatch: var(--color-surface-dark-elevated)"><span class="ds-swatch__sample"></span><code>Dark elevated</code></li>
+              <li class="ds-swatch" style="--swatch: var(--color-text-primary)"><span class="ds-swatch__sample"></span><code>Primary text</code></li>
+              <li class="ds-swatch" style="--swatch: var(--color-text-secondary)"><span class="ds-swatch__sample"></span><code>Secondary text</code></li>
+              <li class="ds-swatch" style="--swatch: var(--color-border-strong)"><span class="ds-swatch__sample"></span><code>Control border</code></li>
+              <li class="ds-swatch" style="--swatch: var(--color-focus-ring)"><span class="ds-swatch__sample"></span><code>Focus ring</code></li>
+            </ul>
+          </section>
+
+          <section class="stack" aria-labelledby="type-scale-title">
+            <h3 id="type-scale-title">Typography scale</h3>
+            <div class="ds-type-scale">
+              <p class="text-display">Display — Digital experiences with purpose.</p>
+              <p class="ds-type-h1">H1 — Clear portfolio positioning</p>
+              <p class="ds-type-h2">H2 — Recruiter-scannable sections</p>
+              <p class="ds-type-h3">H3 — Component and project titles</p>
+              <p class="ds-type-h4">H4 — Supporting information</p>
+              <p class="text-body-large">Body large — A concise lead paragraph that introduces important context.</p>
+              <p class="text-body">Body — Comfortable reading text for responsibilities, process, and outcomes.</p>
+              <p class="text-body-small">Body small — Supporting metadata that remains readable.</p>
+              <p class="text-label">Label — Interface label</p>
+              <p class="text-eyebrow">Eyebrow — Selected work</p>
+            </div>
+          </section>
+
+          <section class="stack" aria-labelledby="spacing-title">
+            <h3 id="spacing-title">Spacing scale</h3>
+            <ul class="ds-spacing-list">
+              <li style="--sample-space: var(--space-1)"><code>4px</code><span></span></li>
+              <li style="--sample-space: var(--space-2)"><code>8px</code><span></span></li>
+              <li style="--sample-space: var(--space-3)"><code>12px</code><span></span></li>
+              <li style="--sample-space: var(--space-4)"><code>16px</code><span></span></li>
+              <li style="--sample-space: var(--space-6)"><code>24px</code><span></span></li>
+              <li style="--sample-space: var(--space-8)"><code>32px</code><span></span></li>
+              <li style="--sample-space: var(--space-12)"><code>48px</code><span></span></li>
+              <li style="--sample-space: var(--space-16)"><code>64px</code><span></span></li>
+              <li style="--sample-space: var(--space-20)"><code>80px</code><span></span></li>
+              <li style="--sample-space: var(--space-24)"><code>96px</code><span></span></li>
+              <li style="--sample-space: var(--space-30)"><code>120px</code><span></span></li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="section ds-section" id="components" aria-labelledby="components-title">
+        <div class="container stack">
+          <header class="section-heading">
+            <p class="eyebrow">Components</p>
+            <h2 id="components-title">Interactive and content patterns</h2>
+          </header>
+
+          <section class="stack" aria-labelledby="buttons-title">
+            <h3 id="buttons-title">Buttons</h3>
+            <div class="cluster ds-component-row">
+              <a class="button button--primary" href="#buttons-title">Primary</a>
+              <a class="button button--secondary" href="#buttons-title">Secondary</a>
+              <a class="button button--dark" href="#buttons-title">Dark</a>
+              <a class="button button--text" href="#buttons-title">Text link</a>
+              <button class="button button--primary" type="button" disabled>Disabled</button>
+              <a class="button button--secondary" href="#buttons-title" aria-disabled="true">ARIA disabled</a>
+              <button class="button button--primary" type="button">With icon <span aria-hidden="true">→</span></button>
+            </div>
+            <div class="ds-inverse-row">
+              <a class="button button--inverse" href="#buttons-title">Inverse</a>
+            </div>
+          </section>
+
+          <section class="stack" aria-labelledby="primitives-title">
+            <h3 id="primitives-title">Content primitives</h3>
+            <div class="cluster ds-component-row">
+              <span class="eyebrow">Selected work</span>
+              <span class="skill-tag">CMS Management</span>
+              <span class="capability-pill">Responsive Design</span>
+              <span class="status-indicator"><span class="status-indicator__dot" aria-hidden="true"></span>Available</span>
+              <a class="inline-link" href="#primitives-title">Inline text link</a>
+            </div>
+          </section>
+
+          <section class="stack" aria-labelledby="cards-title">
+            <h3 id="cards-title">Card foundation</h3>
+            <div class="grid ds-card-grid">
+              <article class="card">
+                <header class="card__header"><h4>Base card</h4></header>
+                <div class="card__body"><p>Optional header, body, and footer regions.</p></div>
+                <footer class="card__footer"><span class="text-body-small">Supporting information</span></footer>
+              </article>
+              <a class="card card--interactive" href="#cards-title">
+                <div class="card__body"><h4>Interactive card</h4><p>Hover and keyboard-focus treatment.</p></div>
+              </a>
+              <article class="card card--dark">
+                <div class="card__body"><h4>Dark card</h4><p>Inverse text on an ink surface.</p></div>
+              </article>
+              <article class="card card--featured">
+                <div class="card__body"><h4>Featured card</h4><p>Additional spacing and restrained elevation.</p></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="stack" aria-labelledby="project-card-title">
+            <h3 id="project-card-title">Project-card structure</h3>
+            <article class="project-card project-card--featured" aria-labelledby="sample-project-name">
+              <div class="project-card__media ds-project-media" role="img" aria-label="Placeholder region for a real project image"></div>
+              <div class="project-card__body">
+                <p class="project-card__organization">Organization or industry</p>
+                <h4 class="project-card__title" id="sample-project-name">Project name</h4>
+                <p class="project-card__role">Role: Confirmed project role</p>
+                <p class="project-card__summary">Concise problem and operational outcome supplied from verified project information.</p>
+                <ul class="project-card__tags" aria-label="Skills used">
+                  <li class="skill-tag">Skill one</li>
+                  <li class="skill-tag">Skill two</li>
+                  <li class="skill-tag">Skill three</li>
+                  <li class="skill-tag">Skill four</li>
+                </ul>
+                <p class="project-card__result"><strong>Verified result:</strong> Add a truthful result before publication.</p>
+                <a class="project-card__link" href="#project-card-title">View named project case study</a>
+              </div>
+            </article>
+          </section>
+
+          <div class="grid ds-pattern-grid">
+            <section class="stack" aria-labelledby="experience-title">
+              <h3 id="experience-title">Experience entry</h3>
+              <article class="experience-entry" aria-labelledby="sample-role">
+                <header class="experience-entry__header">
+                  <h4 id="sample-role">Confirmed role title</h4>
+                  <p class="experience-entry__meta">Organization · Confirmed dates</p>
+                </header>
+                <p class="experience-entry__summary">Concise responsibility summary using real employment information.</p>
+                <ul class="experience-entry__highlights"><li>Verified responsibility or operational outcome.</li></ul>
+              </article>
+            </section>
+
+            <section class="stack" aria-labelledby="skill-group-title">
+              <h3 id="skill-group-title">Skill-group card</h3>
+              <section class="skill-group-card" aria-labelledby="sample-skill-group">
+                <h4 class="skill-group-card__title" id="sample-skill-group">Work function</h4>
+                <ul class="skill-group-card__list">
+                  <li>Skill one</li>
+                  <li>Skill two</li>
+                  <li>Skill three</li>
+                </ul>
+              </section>
+            </section>
+          </div>
+
+          <section class="stack" aria-labelledby="cta-title">
+            <h3 id="cta-title">CTA panel</h3>
+            <aside class="cta-panel" aria-labelledby="sample-cta-title">
+              <div>
+                <h4 id="sample-cta-title">Clear call-to-action heading</h4>
+                <p class="cta-panel__copy">Short supporting copy explaining the next step.</p>
+              </div>
+              <div class="cta-panel__actions"><a class="button button--inverse" href="#cta-title">CTA action</a></div>
+            </aside>
+          </section>
+        </div>
+      </section>
+
+      <section class="section dark-section" id="dark-surfaces" aria-labelledby="dark-title">
+        <div class="container stack">
+          <header class="section-heading">
+            <p class="eyebrow eyebrow--accent">Dark UI surfaces</p>
+            <h2 id="dark-title">Premium, restrained product presentation</h2>
+            <p class="section-heading__description">Ink and navy surfaces with small cyan accents and static ambient glow.</p>
+          </header>
+          <div class="split">
+            <div class="dark-panel dark-panel--elevated technical-glow">
+              <p class="eyebrow eyebrow--accent">Elevated panel</p>
+              <h3>Technical credibility without visual noise</h3>
+              <p class="text-inverse-muted">Muted inverse copy remains readable against dark surfaces.</p>
+              <span class="status-indicator status-indicator--dark status-indicator--accent"><span class="status-indicator__dot" aria-hidden="true"></span>System available</span>
+            </div>
+            <div class="ui-preview-card technical-glow--accent">
+              <header class="ui-preview-card__header">
+                <span class="ui-preview-card__title">UI preview card</span>
+                <span class="ui-preview-card__accent" aria-hidden="true"></span>
+              </header>
+              <div class="ui-preview-card__body">
+                <div class="ui-preview-card__surface"><h4>Preview surface</h4><p>Structured interface content region.</p></div>
+                <div class="ui-preview-card__surface"><h4>Supporting surface</h4><p>Static, token-based presentation.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ds-section" id="focus" aria-labelledby="focus-title">
+        <div class="container stack">
+          <header class="section-heading">
+            <p class="eyebrow">Accessibility</p>
+            <h2 id="focus-title">Focus and form-control checks</h2>
+            <p class="section-heading__description">Tab through every control and confirm the indicator remains visible on light and dark surfaces.</p>
+          </header>
+          <div class="grid ds-focus-grid">
+            <div class="ds-focus-panel stack">
+              <h3>Light surface</h3>
+              <a href="#focus-title">Recognizable inline link</a>
+              <button class="button button--primary" type="button">Focusable button</button>
+              <label for="ds-field">Focusable field</label>
+              <input id="ds-field" type="text" placeholder="Enter test text" />
+            </div>
+            <div class="dark-panel stack">
+              <h3>Dark surface</h3>
+              <a href="#focus-title">Dark-surface link</a>
+              <button class="button button--inverse" type="button">Inverse button</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ds-footer">
+      <div class="container"><p>Development fixture only · Excluded from production navigation</p></div>
+    </footer>
+  </body>
+</html>

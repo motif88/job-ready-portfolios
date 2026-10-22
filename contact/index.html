@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Stanley Johnson</title>
+    <meta name="description" content="Contact Stanley Johnson for website production, CMS management, UX design, and digital experience opportunities." />
+    <link rel="canonical" href="https://example.com/contact/" />
+    <link rel="stylesheet" href="../assets/css/tokens.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+    <script src="../assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" aria-label="Site header">
+      <div class="container site-header__inner">
+        <a class="site-brand" href="../index.html" aria-label="Stanley Johnson home page">Stanley Johnson</a>
+        <nav class="nav desktop-nav" aria-label="Main navigation">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="../work/index.html">Work</a></li>
+            <li><a class="nav__link" href="../index.html#experience">Experience</a></li>
+            <li><a class="nav__link" href="../about/index.html">About</a></li>
+            <li><a class="nav__link" href="index.html" aria-current="page">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a class="header-cta" href="../assets/documents/stanley-johnson-resume.pdf" download>Download Résumé</a>
+          </div>
+        </nav>
+
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <button class="mobile-nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation-menu" aria-label="Open navigation menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none" /></svg>
+            <span>Menu</span>
+          </button>
+          <div class="mobile-nav__menu" id="mobile-navigation-menu" hidden>
+            <a href="../work/index.html">Work</a>
+            <a href="../index.html#experience">Experience</a>
+            <a href="../about/index.html">About</a>
+            <a href="index.html" aria-current="page">Contact</a>
+            <a class="button button-primary" href="../assets/documents/stanley-johnson-resume.pdf" download>Download Résumé</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+      <section class="section page-intro">
+        <div class="container page-intro__inner">
+          <p class="page-intro__eyebrow">Contact</p>
+          <h1>Let’s talk about your next digital opportunity.</h1>
+          <p>Reach out about web production, website operations, CMS work, UX improvements, or digital experience support.</p>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="contact-card">
+            <form class="contact-form" action="#" method="post">
+              <div class="form-row">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" required />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+              </div>
+
+              <div>
+                <label for="company">Company or organization</label>
+                <input id="company" name="company" type="text" />
+              </div>
+
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <div class="form-status" id="form-status" aria-live="polite"></div>
+
+              <button class="button button-primary" type="submit">Send Message</button>
+            </form>
+
+            <p class="contact-detail"><strong>Direct email:</strong> <a href="mailto:stanleyjohnsonportfolio@example.com">stanleyjohnsonportfolio@example.com</a></p>
+            <p class="fine-print">Email and form service are placeholders until the final contact details and form backend are configured.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© 2026 Stanley Johnson</p>
+        <nav aria-label="Footer navigation">
+          <a href="../index.html">Home</a>
+          <a href="../work/index.html">Work</a>
+          <a href="../resume/index.html">Résumé</a>
+          <a href="../about/index.html">About</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      const form = document.querySelector('.contact-form');
+      const status = document.getElementById('form-status');
+
+      if (form && status) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          const formData = new FormData(form);
+          const name = (formData.get('name') || '').toString().trim();
+          const email = (formData.get('email') || '').toString().trim();
+          const message = (formData.get('message') || '').toString().trim();
+
+          if (!name || !email || !message) {
+            status.textContent = 'Please complete all required fields before sending.';
+            status.className = 'form-status form-status--error';
+            return;
+          }
+
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(email)) {
+            status.textContent = 'Please enter a valid email address.';
+            status.className = 'form-status form-status--error';
+            return;
+          }
+
+          status.textContent = 'Thank you. This form is a front-end placeholder and will need a configured email or form service before launch.';
+          status.className = 'form-status form-status--success';
+          form.reset();
+        });
+      }
+    </script>
+  </body>
+</html>
